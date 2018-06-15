@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".subActivities.PlaylistActivity">
+
+    <ImageView
+        android:id="@+id/imgBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_shape"/>
+
+    <TextView
+        android:id="@+id/txtHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[playlist name]"
+        style="@style/ActivityViewHeader" />
+
+    <TextView
+        android:id="@+id/txtPlaylistInstructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtHeader"
+        android:text="@string/playlist_instructions"
+        style="@style/PlaylistInstructionsText" />
+
+
+    <ListView
+        android:id="@+id/list_songs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_buttons"
+        android:layout_below="@+id/txtPlaylistInstructions"
+        style="@style/ActivityListView"
+        tools:listitem="@layout/song_list_item">
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/layout_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/NavButtonsLayout" >
+
+        <Button
+            android:id="@+id/btnNowPlaying"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/now_playing"/>
+
+        <Button
+            android:id="@+id/btnAddAllSongs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_all_songs"/>
+
+        <Button
+            android:id="@+id/btnActiveQueue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/active_queue"/>
+    </LinearLayout>
+
+</RelativeLayout>

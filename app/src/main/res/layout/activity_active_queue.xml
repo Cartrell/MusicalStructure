@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".subActivities.ActiveQueueActivity">
+
+    <ImageView
+        android:id="@+id/imgBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_shape"/>
+
+    <TextView
+        android:id="@+id/txtHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/active_queue"
+        style="@style/ActivityViewHeader"
+        />
+
+    <ListView
+        android:id="@+id/list_songs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtHeader"
+        android:layout_above="@id/layout_buttons"
+        style="@style/ActivityListView"
+        tools:listitem="@layout/active_queue_list_item">
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/layout_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/NavButtonsLayout">
+
+        <Button
+            android:id="@+id/btnNowPlaying"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/now_playing"/>
+
+        <Button
+            android:id="@+id/btnPlaylists"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/playlists"/>
+
+        <Button
+            android:id="@+id/btnRemove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/remove"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtActiveQueueNoSongs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No songs selected"
+        style="@style/ActiveQueueNoSongsTextView" />
+</RelativeLayout>

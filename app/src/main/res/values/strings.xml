@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MusicalStructure</string>
+    <string name="active_queue">Active Queue</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="playlists">Playlists</string>
+    <string name="remove">Remove</string>
+    <string name="add_all_songs">Add All Songs</string>
+    <string name="added_all_songs">Added all songs</string>
+    <string name="added_song_format">Added song %1$s</string>
+    <string name="no_songs_active">[No songs in the Active Queue]</string>
+    <string name="no_name_specified">[No name specified]</string>
+    <string name="invalid_playlist">[Invalid playlist]</string>
+    <string name="num_songs_format">Songs: %1$d</string>
+    <string name="playlist_instructions">Tap individual songs to add them to the active queue, or you can add all the songs at once.</string>
+</resources>

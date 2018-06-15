@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".subActivities.NowPlayingActivity">
+
+    <ImageView
+        android:id="@+id/imgBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_shape"/>
+
+    <TextView
+        android:id="@+id/txtNowPlaying"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/now_playing"
+        style="@style/ActivityViewHeader"
+        />
+
+    <TextView
+        android:id="@+id/txtSongName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layout_playButtons"
+        style="@style/NowPlayingSongName"
+        />
+
+    <LinearLayout
+        android:id="@+id/layout_playButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/NowPlayinglayButtonsLayout" >
+
+        <Button
+            android:id="@+id/btnPrevious"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/NowPlayinglayPrevButton" />
+
+        <Button
+            android:id="@+id/btnPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/NowPlayinglayPlayButton" />
+
+        <Button
+            android:id="@+id/btnPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/NowPlayinglayPauseButton" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/NowPlayinglayNextButton" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtSongTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_playButtons"
+        style="@style/NowPlayingSongLength" />
+
+    <LinearLayout
+        android:id="@+id/layout_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/NavButtonsLayout" >
+
+        <Button
+            android:id="@+id/btnPlaylists"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/playlists"/>
+
+        <Button
+            android:id="@+id/btnActiveQueue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/active_queue"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- ////////////////////////////// -->
+    <!-- Nav buttons layout (the buttons at the bottom of various activity views) -->
+    <!-- ////////////////////////////// -->
+    <style name="NavButtonsLayout">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- ////////////////////////////// -->
+    <!-- Header text view style used across various activities -->
+    <!-- ////////////////////////////// -->
+    <style name="ActivityViewHeader">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/colorTextMain</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+
+    <!-- ////////////////////////////// -->
+    <!-- List view style used across various activities -->
+    <!-- ////////////////////////////// -->
+    <style name="ActivityListView">
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+    </style>
+
+    <style name="ListItemMainLabel">
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorTextMain</item>
+    </style>
+
+    <style name="ListItemSubLabel">
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/colorTextMain</item>
+    </style>
+
+    <!-- ////////////////////////////// -->
+    <!-- Now playing styles -->
+    <!-- ////////////////////////////// -->
+    <style name="NowPlayingSongName">
+        <item name="android:text">"[song name]"</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorTextMain</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="NowPlayingSongLength">
+        <item name="android:text">"[00:00]"</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorTextMain</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="NowPlayinglayButtonsLayout">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="NowPlayinglayPrevButton">
+        <item name="android:background">@android:drawable/ic_media_previous</item>
+    </style>
+
+    <style name="NowPlayinglayPlayButton">
+        <item name="android:background">@android:drawable/ic_media_play</item>
+    </style>
+
+    <style name="NowPlayinglayPauseButton">
+        <item name="android:background">@android:drawable/ic_media_pause</item>
+    </style>
+
+    <style name="NowPlayinglayNextButton">
+        <item name="android:background">@android:drawable/ic_media_next</item>
+    </style>
+
+    <!-- ////////////////////////////// -->
+    <!-- Active queue styles -->
+    <!-- ////////////////////////////// -->
+    <style name="ActiveQueueListItemCheckbox" >
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:focusable">false</item>
+    </style>
+
+    <style name="ActiveQueueNoSongsTextView">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorTextMain</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <!-- ////////////////////////////// -->
+    <!-- playlist activity styles -->
+    <!-- ////////////////////////////// -->
+    <style name="PlaylistInstructionsText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorTextMain</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+</resources>
